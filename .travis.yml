@@ -1,12 +1,6 @@
-os: linux
-dist: focal
 vm:
-  create:
-    name: custom_Pankaj_00902_example
-before_install:
-  - sudo apt-get -y install libxml2-dev
-addons:
-  apt:
-    update: true
+  use: concurrent-plan-i1
+  size: gpu-medium
+ 
 script:
-  - echo "OKAY7"
+  - echo "TEST"
